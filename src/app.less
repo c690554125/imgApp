@@ -1,0 +1,51 @@
+// resize
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.app {
+	.search-areas {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: sticky;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		box-shadow: 0 0 10px #eee;
+		padding: 0 2vw;
+		height: 12vw;
+		.search-title {
+			width: 50vw;
+		}
+		.op-areas {
+			.search-btn {
+				margin-left: 4vw;
+			}
+			.search-more {
+				margin-left: 2vw;
+			}
+		}
+	}
+
+	// flex分列做法
+	// .imgs {
+	// 	column-count: 4;
+	// 	column-gap: 1vw;
+	// 	.imgsrc {
+	// 		width: 100%;
+	// 	}
+	// }
+
+	.imgs {
+		display: flex;
+		.imgs-wrap {
+			flex: 1;
+			font-size: 0;
+			.imgsrc {
+				width: 100%;
+			}
+		}
+	}
+}
